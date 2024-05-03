@@ -15,4 +15,4 @@ Set of CLI tools for setup Ethereum Validator.
 
 ## TODO
 
-* Update `mainnet`
+  [ ] Update `mainnet`
