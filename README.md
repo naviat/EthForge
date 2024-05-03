@@ -12,3 +12,7 @@ Set of CLI tools for setup Ethereum Validator.
 ![alt text](./images/validator-arc.png)
 
 ![alt text](./images/cl-el-validator.png)
+
+## TODO
+
+* Update `mainnet`
