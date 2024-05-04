@@ -200,10 +200,6 @@ getPubKeys() {
     TEMP=$(sudo -u validator bash -c "$nimbus_cmd")
     convertLIST
     ;;
-  Prysm)
-    TEMP=$(/usr/local/bin/validator accounts list --$NETWORK --wallet-dir=/var/lib/prysm/validators | grep -Eo '0x[a-fA-F0-9]{96}')
-    convertLIST
-    ;;
   esac
 }
 
@@ -597,6 +593,18 @@ createBeaconChainDashboardLink() {
   _linkresult=${_link}${_ids}
   ohai "Beaconcha.in Validator Dashboard: Copy and paste your link into a web browser. Bookmark."
   echo ${_linkresult}
+  ohai "Press ENTER to continue"
+  read
+}
+
+testBandwidth() {
+  clear
+  echo "################################################################"
+  ohai "Test internet bandwidth using speedtest.net"
+  echo "################################################################"
+  ohai "Requirements: A full node uses at least 10MBbit/s upload and 10Mbit/s download."
+  ohai "Starting speedtest ..."
+  curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
   ohai "Press ENTER to continue"
   read
 }
