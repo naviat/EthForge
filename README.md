@@ -13,6 +13,12 @@ Set of CLI tools for setup Ethereum Validator.
 
 ![alt text](./images/cl-el-validator.png)
 
+## How to
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/naviat/EthForge/main/install.sh)"
+```
+
 ## TODO
 
   [ ] Update `mainnet`
