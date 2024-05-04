@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.4.8"
+VERSION="1.0.0"
 BASE_DIR=$HOME/git/ethforge
 
 # Load functions
